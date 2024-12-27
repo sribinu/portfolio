@@ -249,8 +249,71 @@
           </div>
         </div>
       </section>
+
+      <!-- Projects -->
+      <section class="projects section container" id="projects">
+        <h2 class="section_title">Projects_</h2>
+        <div class="project_categories">
+          <button class="category_btn text_xs active_work" data-filter="all">
+            ALL
+          </button>
+          <button class="category_btn text_xs" data-filter=".web">
+            WEB SITES
+          </button>
+          <button class="category_btn text_xs" data-filter=".app">
+            WEB APPS
+          </button>
+          <button class="category_btn text_xs" data-filter=".landing">
+            LANDING PAGES
+          </button>
+        </div>
+
+        <div class="projects_container grid">
+          <div class="project_item grid mix landing">
+            <img src="assets/project-1.png" alt="p1" class="project_img" />
+            <div class="project_data">
+              <h3 class="project_title text_lg">FULL SCREEN LANDING</h3>
+              <p class="project_description">
+                This is the very first basic project, I developed using html and
+                css.
+              </p>
+              <h4 class="project_stack text_xs">USED STACK:</h4>
+              <ul class="tags text_sm">
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+              <a
+                href="https://sribinu.github.io/fullscreenlanding/"
+                class="project_link text_sm"
+                target="_blank"
+                >LIVE</a
+              >
+            </div>
+          </div>
+
+          <div class="project_item grid mix web">
+            <img src="assets/project-2.png" alt="p2" class="project_img" />
+            <div class="project_data">
+              <h3 class="project_title text_lg">Project 2</h3>
+              <p class="project_description">Lorem, ipsum dolor.</p>
+              <h4 class="project_stack text_xs">USED STACK:</h4>
+              <ul class="tags text_sm">
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+              <a
+                href="https://sribinu.github.io/fullscreenlanding/"
+                class="project_link text_sm"
+                target="_blank"
+                >LIVE</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <script src="js/mixitup.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

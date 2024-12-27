@@ -57,7 +57,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--mono-font);
   font-weight: var(--bold);
 }
@@ -274,6 +275,11 @@ dl dd:not(:last-child) {
   line-height: 1.43em;
 }
 
+.text_xs {
+  font-size: var(--fs-xs);
+  line-height: 1.5em;
+}
+
 .hello_details {
   margin-bottom: 1.67em;
   text-align: justify;
@@ -402,4 +408,94 @@ dl dd:not(:last-child) {
 
 .edu_description {
   text-align: justify;
+}
+
+/* projects */
+.project_categories {
+  display: flex;
+  column-gap: 3rem;
+  margin-bottom: 1.875rem;
+}
+
+.category_btn {
+  color: var(--text-color-alt);
+  font-weight: var(--bold);
+  font-family: var(--mono-font);
+  position: relative;
+}
+
+.category_btn:hover {
+  color: var(--primary-color);
+}
+
+.category_btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -0.5rem;
+  width: 7px;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.category_btn:hover::after {
+  opacity: 1;
+}
+
+.active_work {
+  color: var(--primary-color);
+}
+
+.active_work::after {
+  opacity: 1;
+}
+
+.projects_container {
+  row-gap: 2.5rem;
+}
+
+.project_item {
+  grid-template-columns: 5fr 7fr;
+}
+
+.project_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project_data {
+  padding: 3rem 3rem 2.5rem 1.875rem;
+  border: 1ps solid --border-color;
+}
+
+.project_title {
+  margin-bottom: 0.8em;
+  text-align: justify;
+}
+
+.project_description {
+  margin-bottom: 2.5em;
+  text-align: justify;
+}
+
+.project_stack {
+  margin-bottom: 1.25em;
+}
+
+.tags li {
+  display: inline-block;
+  margin-right: 0.6rem;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 14%);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.project_link {
+  float: right;
+  margin-top: 3.9em;
+  color: var(--primary-color);
+  font-family: var(--mono-font);
 }
