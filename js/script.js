@@ -15,3 +15,17 @@ function activeWork() {
 }
 
 linkWork.forEach((a) => a.addEventListener("click", activeWork));
+
+// Testimonials swiper
+var testiSwiper = new Swiper(".testimonial_container", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});

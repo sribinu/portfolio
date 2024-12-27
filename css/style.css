@@ -496,7 +496,115 @@ dl dd:not(:last-child) {
 .project_link {
   float: right;
   margin-top: 3.9em;
-  color: var(--primary-color);
+  color: #fff;
   font-family: var(--mono-font);
-  background-color: aqua;
+  background-color: #0078d7;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.project_link:hover {
+  background-color: #005ea2;
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonial_bg {
+  background: url("../assets/bg.jpg");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.testimonial_bg::before {
+  content: "";
+  background: var(--linear-gradient);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.testimonial_icon {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-color);
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  padding-top: 2.75rem;
+  text-align: center;
+}
+
+.testimonial_container {
+  padding-top: 5rem;
+  padding-bottom: 7.8rem;
+}
+
+.testimonial_item {
+  padding: 0 5.75rem;
+}
+
+.title,
+.subtitle,
+.testimonial_description {
+  color: #fff;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 0.56em;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-style: italic;
+  opacity: 0.7;
+  margin-bottom: 1.25em;
+}
+
+.testimonial_description {
+  text-align: justify;
+}
+
+.ruler {
+  width: 100%;
+  height: 1px;
+  background-color: #a98a79;
+  margin-bottom: 1rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 2rem;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+  margin: 0 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
