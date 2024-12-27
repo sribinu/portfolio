@@ -498,4 +498,5 @@ dl dd:not(:last-child) {
   margin-top: 3.9em;
   color: var(--primary-color);
   font-family: var(--mono-font);
+  background-color: aqua;
 }
