@@ -402,12 +402,166 @@
               </div>
             </div>
             <div class="swiper-button-next">
-              <img src="assets/arrow-next.svg" alt="arrow-next">
+              <img src="assets/arrow-next.svg" alt="arrow-next" />
             </div>
             <div class="swiper-button-prev">
-              <img src="assets/arrow-prev.svg" alt="arrow-prev">
+              <img src="assets/arrow-prev.svg" alt="arrow-prev" />
             </div>
             <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="blog section container" id="blog">
+        <h2 class="section_title">Latest Posts_</h2>
+        <div class="posts_container grid">
+          <div class="post_card">
+            <img src="assets/blog-1.jpeg" alt="blog-1" class="post_img" />
+            <div class="post_content">
+              <p class="post_date text_xs">December 20, 2024</p>
+              <h3 class="post_title text_sm">
+                Course on Java Full Stack Development
+              </h3>
+              <p class="post_description text_sm">
+                The Java Full Stack Development course is a comprehensive
+                program designed to equip learners with the essential skills
+                required to build dynamic and responsive web applications.
+                Covering both frontend and backend technologies, this course
+                provides hands-on experience with tools, frameworks, and best
+                practices widely used in the industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="post_card">
+            <img src="assets/blog-2.png" alt="blog-2" class="post_img" />
+            <div class="post_content">
+              <p class="post_date text_xs">March 18, 2024</p>
+              <h3 class="post_title text_sm">
+                Completed a 30-Day Internship in Web Development
+              </h3>
+              <p class="post_description text_sm">
+                I successfully completed a 30-day internship in Web Development
+                at AK Infopark, Nagercoil. This program provided in-depth
+                exposure to backend development and real-world web application
+                workflows.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="post_card">
+            <img src="assets/blog-3.png" alt="blog-3" class="post_img" />
+            <div class="post_content">
+              <p class="post_date text_xs">August 1, 2023</p>
+              <h3 class="post_title text_sm">
+                Completed a 15-Day Internship in Web Design & Development
+              </h3>
+              <p class="post_description text_sm">
+                I successfully completed a 15-day internship in Web Design &
+                Development at Wibits Web Solutions LLP, Nagercoil. During this
+                program, I gained hands-on experience in designing responsive
+                and user-friendly websites using modern tools and technologies.
+              </p>
+            </div>
+          </div> -->
+
+          <div class="post_card">
+            <img src="assets/blog-4.png" alt="blog-4" class="post_img" />
+            <div class="post_content">
+              <p class="post_date text_xs">April 10, 2023</p>
+              <h3 class="post_title text_sm">
+                Participated in Kumari Hackathon
+              </h3>
+              <p class="post_description text_sm">
+                I had the incredible opportunity to participate in the Kumari
+                Hackathon, an innovative platform aimed at marketing the
+                traditional products of Kanyakumari. This event brought together
+                creative minds to develop tech-driven solutions that highlight
+                and promote the unique heritage of the region.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <div class="contact_content container">
+          <h2 class="section_title">Get in touch_</h2>
+          <div class="contact_container grid">
+            <div class="contact_info">
+              <dl class="contact_list">
+                <dt>Phone:</dt>
+                <dd>6385772648</dd>
+                <dt>Email:</dt>
+                <dd>sribinu347@gmail.com</dd>
+                <dt>WhatsApp:</dt>
+                <dd>
+                  <a href="https://wa.me/qr/23OPEHNRPM75O1" target="_blank"
+                    >https://wa.me/qr/23OPEHNRPM75O1</a
+                  >
+                </dd>
+              </dl>
+              <ul class="contact_socials">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/sribinu"
+                    class="contact_social_link"
+                    target="_blank"
+                    >Linkedin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/sribinu"
+                    class="contact_social_link"
+                    target="_blank"
+                    >Github</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="contact_form">
+              <p class="form_title">Write me a letter here_</p>
+              <form action="" id="contact_form">
+                <div class="contact_input_div">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    class="contact_input"
+                    id="contact_name"
+                  />
+                </div>
+                <div class="contact_input_div">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                    class="contact_input"
+                    id="contact_email"
+                  />
+                </div>
+                <div class="contact_input_div">
+                  <textarea
+                    placeholder="Type the message here"
+                    name="message"
+                    class="contact_input textarea"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <p class="contact_message text_sm" id="contact_message">
+                  Message
+                </p>
+                <button type="submit" class="button contact_button">
+                  SEND
+                </button>
+              </form>
+              <p class="footer">&copy; 2024 Sribinu P. All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -415,6 +569,10 @@
 
     <script src="js/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>

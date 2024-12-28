@@ -608,3 +608,156 @@ dl dd:not(:last-child) {
 .swiper-pagination-bullet-active {
   background-color: #fff;
 }
+
+/* Blog */
+.posts_container {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.post_img {
+  vertical-align: middle;
+}
+
+.post_content {
+  border: 1px solid var(--border-color);
+  padding: 1.25rem 1.875rem 2.5rem 1.25rem;
+}
+
+.post_date {
+  text-transform: uppercase;
+  color: var(--text-color-alt);
+  margin-bottom: 0.8em;
+}
+
+.post_title {
+  margin-bottom: 1.1em;
+}
+
+.post_description {
+  color: var(--text-color-alt);
+  text-align: justify;
+}
+
+/* Contact */
+.contact {
+  background: url("../assets/bg.jpg");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  background: var(--linear-gradient);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.contact_content {
+  z-index: 1;
+  position: relative;
+}
+
+.contact_container {
+  grid-template-columns: 4fr 5fr 3fr;
+  column-gap: 1.875rem;
+  padding-top: 1.25rem;
+}
+
+.contact .section_title,
+.contact_list,
+.contact_social_link,
+::placeholder,
+.contact_input,
+.form_title,
+.footer,
+.contact_list a {
+  color: #fff;
+  font-family: var(--mono-font);
+}
+
+.contact_list {
+  margin-bottom: 3.25rem;
+}
+
+.contact_list dt {
+  float: left;
+  font-weight: var(--bold);
+  text-transform: uppercase;
+}
+
+.contact_list dd {
+  padding-left: 6.25em;
+  margin-bottom: 0.94em;
+}
+
+.contact_socials li {
+  margin-bottom: 0.75rem;
+  font-family: var(--roboto-font);
+}
+
+.contact_social_link {
+  font-family: var(--roboto-font);
+}
+
+.contact_form {
+  position: relative;
+}
+
+.form_title {
+  margin-bottom: 1.25em;
+}
+
+.contact_input_div {
+  margin-bottom: 0.94em;
+}
+
+.contact_input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 0.625rem;
+}
+
+.textarea {
+  height: 7.2rem;
+  resize: none;
+}
+
+.contact_input:focus {
+  box-shadow: inset 0 0 5px 0 #fff;
+}
+
+.contact_message {
+  position: absolute;
+  bottom: 34%;
+  left: 0;
+  font-family: var(--mono-font);
+  color: #fff;
+}
+
+.color-light {
+  opacity: 1;
+}
+
+.color-dark {
+  opacity: 0.4;
+}
+
+.contact_button {
+  margin-top: 1.875rem;
+  width: 100%;
+  box-shadow: 0 1px 29px rgb(0 0 0 / 40%);
+}
+
+.footer {
+  opacity: 0.4;
+  margin-top: 3.75rem;
+  text-align: center;
+}
