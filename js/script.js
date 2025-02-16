@@ -1,3 +1,22 @@
+// Active link
+const navLink = document.querySelectorAll(".nav_link");
+function activeLink() {
+  navLink.forEach((a) => a.classList.remove("active_link"));
+  this.classList.add("active_link");
+}
+
+navLink.forEach((a) => a.addEventListener("click", activeLink));
+
+// Background Header
+function scrollHeader() {
+  const header = document.getElementById("header");
+  // When the scroll is greater than 50 viewport height, add the scroll-header class to header tag
+  if (this.scrollY >= 50) header.classList.add("scroll_header");
+  else header.classList.remove("scroll_header");
+}
+
+window.addEventListener("scroll", scrollHeader);
+
 // Mixitup Filter
 var mixerProjects = mixitup(".projects_container", {
   selectors: {
