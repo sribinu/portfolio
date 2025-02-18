@@ -1,11 +1,39 @@
+// Show menu
+const navMenu = document.getElementById("menu");
+navToggle = document.getElementById("nav__toggle");
+navClose = document.getElementById("nav__close");
+
+// menu show
+//? validate if constant exists
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu");
+  });
+}
+
+// hide menu show
+//? validate if constant exists
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
+}
+
 // Active link
 const navLink = document.querySelectorAll(".nav_link");
 function activeLink() {
   navLink.forEach((a) => a.classList.remove("active_link"));
   this.classList.add("active_link");
 }
-
 navLink.forEach((a) => a.addEventListener("click", activeLink));
+
+//Remove Menu Mobile 
+function linkAction() {
+  const navMenu = document.getElementById("menu");
+  // when we click oneach link, we remove the show-menu class
+  navMenu.classList.remove("show-menu");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 // Background Header
 function scrollHeader() {

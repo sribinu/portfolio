@@ -439,6 +439,8 @@ dl dd:not(:last-child) {
 /* projects */
 .project_categories {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
   column-gap: 3rem;
   margin-bottom: 1.875rem;
 }
@@ -795,14 +797,14 @@ dl dd:not(:last-child) {
 
 /*? For large devices */
 @media screen and (max-width: 1200px) {
-:root {
-  --fs-h1: 2.25rem;
-  --fs-h2: 1.75rem;
-  --fs-lg: 1rem;
-  --fs-base: 0.938rem;
-  --fs-sm: 0.813rem;
-  --fs-xs: 0.687rem;
-}
+  :root {
+    --fs-h1: 2.25rem;
+    --fs-h2: 1.75rem;
+    --fs-lg: 1rem;
+    --fs-base: 0.938rem;
+    --fs-sm: 0.813rem;
+    --fs-xs: 0.687rem;
+  }
 
   .container {
     max-width: 960px;
@@ -835,7 +837,13 @@ dl dd:not(:last-child) {
     justify-content: center;
     align-items: center;
     transform: translateX(-100%);
+    transition: 0.3s;
   }
+
+  .show-menu {
+    transform: translateX(0);
+  }
+
   .list {
     flex-direction: column;
     row-gap: 2.125rem;
@@ -912,6 +920,73 @@ dl dd:not(:last-child) {
 }
 
 /*? For medium devices */
-@media screen and (max-width: 768px) { 
-  /* 45:10*/
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .contact_container,
+  .posts_container,
+  .skill_container {
+    grid-template-columns: 1fr;
+  }
+
+  .project_data {
+    padding: 2rem 1.25rem 1.5rem 1.25rem;
+  }
+
+  .testimonial_container {
+    padding: 3rem 0;
+  }
+
+  .contact_container {
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home {
+    padding-top: 4.4rem;
+  }
+
+  .project_categories {
+    column-gap: 1.5rem;
+  }
+
+  .tags li {
+    margin-bottom: 0.6rem;
+  }
+
+  .testimonial_item {
+    padding: 0 1.5rem;
+  }
+
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
+/*? For small devices */
+@media screen and (max-width: 350px) {
+  :root {
+    --fs-h1: 2rem;
+  }
+
+  .work {
+    font-size: var(--fs-sm);
+  }
+
+  .home__list {
+    font-size: 0.875rem;
+  }
+
+  .home__list dd {
+    padding-left: 5.75rem;
+  }
+
+  .social_link {
+    font-size: 1.3rem;
+  }
 }
