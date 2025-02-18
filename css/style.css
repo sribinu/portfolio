@@ -829,6 +829,15 @@ dl dd:not(:last-child) {
     max-width: 720px;
   }
 
+  .scroll_header .nav_link {
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  .scroll_header .active_link {
+    color: var(--primary-color);
+  }
+
   .menu {
     position: fixed;
     top: 0;
@@ -955,6 +964,8 @@ dl dd:not(:last-child) {
 @media screen and (max-width: 576px) {
   .home {
     padding-top: 4.4rem;
+    background-size: cover;
+    background-position: 25%;
   }
 
   .project_categories {
