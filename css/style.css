@@ -733,6 +733,10 @@ dl dd:not(:last-child) {
   font-family: var(--roboto-font);
 }
 
+.contact_socials {
+  padding-left: 0px;
+}
+
 .contact_social_link {
   font-family: var(--roboto-font);
 }
@@ -925,6 +929,10 @@ dl dd:not(:last-child) {
     max-width: 540px;
   }
 
+  .nav {
+    height: var(--header-height);
+  }
+
   .contact_container,
   .posts_container,
   .skill_container {
@@ -958,13 +966,17 @@ dl dd:not(:last-child) {
   }
 
   .testimonial_item {
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
+  }
+
+  .testimonial_description {
+    font-size: var(--fs-sm);
   }
 
   .swiper-button-next img,
   .swiper-button-prev img {
-    width: 1.125rem;
-    height: 1.125rem;
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
 
